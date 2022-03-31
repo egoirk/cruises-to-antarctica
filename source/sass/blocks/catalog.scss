@@ -1,0 +1,129 @@
+.catalog {
+  padding: 120px 118px;
+  font-family: Montserrat;
+}
+
+.catalog h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 60px;
+}
+
+.catalog__list {
+  max-width: 1160px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards__item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.card {
+  width: 260px;
+  height: 386px;
+
+  @include vp-768 {
+    width: 309px;
+  }
+}
+
+.card__heading h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-alice-blue;
+  margin: -48px 0 0;
+  padding-left: 30px;
+}
+
+.card__side--description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  margin-top: -368px;
+  padding: 35px 25px 30px;
+  color: $color-alice-blue;
+  background-color: #011c40;
+  min-height: 386px;
+  visibility: hidden;
+}
+
+.card:hover .card__side--description {
+  visibility: visible;
+}
+
+.card__wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.card__title {
+  margin: 0;
+  padding-bottom: 5px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+}
+
+.card__heading p {
+  margin: 0;
+  padding-top: 12px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: $color-default-white-text;
+}
+
+.card__description p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #d8d8d9;
+}
+
+.button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  background-color: #f9fbfd;
+  cursor: pointer;
+}
+
+.button__link {
+  display: flex;
+  min-width: 210px;
+  padding-top: 11px;
+  padding-bottom: 7px;
+  padding-right: 46px;
+  padding-left: 46px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #011c40;
+
+  text-decoration: none;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.5;
+}

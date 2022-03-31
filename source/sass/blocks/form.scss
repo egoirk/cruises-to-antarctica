@@ -1,0 +1,158 @@
+@include vp-320 {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    min-height: 380px;
+  }
+}
+
+.form h3 {
+  margin: 0 0 27px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  color: $color-alice-blue;
+
+  @include vp-320 {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+.form__fieldset {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &--checkbox {
+    margin-bottom: 30px;
+  }
+}
+
+.form__fieldset label {
+  color: $color-alice-blue;
+  cursor: pointer;
+  font-size: 10px;
+  line-height: 13px;
+
+  @include vp-320 {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.form__fieldset input {
+  padding: 0 16px;
+  width: 303px;
+  height: 43px;
+  font-size: 14px;
+  text-align: 21px;
+  color: $color-default-text;
+  border: none;
+  border-radius: 0;
+  background-color: $color-alice-blue;
+
+  &:hover {
+    box-shadow: inset 0 0 0 2px $color-tory-blue;
+  }
+
+  &:focus {
+    outline: thick double 2px rgba(255, 255, 255, 0.4);
+    outline-offset: 2px;
+  }
+}
+
+.form__fieldset input::placeholder {
+  color: $color-default-text;
+}
+
+.form__fieldset--checkbox input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form__fieldset--checkbox label {
+  position: relative;
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 400;
+  padding: 5px 0 0 23px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background-color: $color-alice-blue;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 4px;
+    top: 3px;
+    width: 10px;
+    height: 7px;
+    border: 1px solid $color-sapphire;
+    border-top-style: none;
+    border-right-style: none;
+    transform: rotate(-45deg);
+  }
+
+  @include vp-320 {
+    padding-top: 0;
+  }
+}
+
+.form__fieldset--checkbox input:checked + label::after {
+  display: block;
+}
+
+.form__fieldset--checkbox input:disabled + label {
+  opacity: 0.3;
+}
+
+.form-btn {
+  display: block;
+  width: 303px;
+  min-height: 43px;
+  padding: 10px 25px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  border: none;
+  background-color: $color-alice-blue;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-default-text;
+    background-color: $color-solitude;
+  }
+
+  &:focus {
+    background-color: $color-alice-blue;
+  }
+
+  &:active {
+    background-color: $color-alice-blue;
+  }
+
+  @include vp-320 {
+    width: 100%;
+  }
+}
