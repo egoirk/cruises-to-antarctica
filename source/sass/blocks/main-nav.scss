@@ -16,31 +16,7 @@
   padding: 0;
   list-style: none;
 
-  @include vp-320 {
-    position: absolute;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
-    min-height: 299px;
-    padding: 77px 15px 15px;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 500;
-    color: $color-default-text;
-    background-color: $color-default-bg;
-  }
-}
 
-.main-nav__item {
-  @include vp-320 {
-    padding: 11px 0 10px;
-
-    &--destinations {
-      order: -1;
-    }
-  }
 }
 
 .main-nav__link {
@@ -49,6 +25,18 @@
   font-weight: 500;
   color: $color-default-white-text;
   line-height: 20px;
+
+  &:hover {
+    color: $color-solitude;
+  }
+
+  &:focus {
+    color: $color-solitude;
+  }
+
+  &:active {
+    color: $color-alice-blue;
+  }
 
   @include vp-768 {
     font-size: 14px;
@@ -63,101 +51,115 @@
   }
 }
 
+.main-nav__item {
+  @include vp-320 {
+    padding-bottom: 20px;
+  }
+}
+
 .main-nav__toggle {
   display: none;
   @include vp-320 {
-    margin: 0;
-    padding: 0;
-    display: block;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  display: block;
+  width: 24px;
+  height: 2px;
+  cursor: pointer;
+  border: none;
+  background-color: $color-default-bg;
+  z-index: 3;
+
+  &:focus-visible {
+    outline: 2px solid $color-default-bg;
+  }
+  }
+}
+
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $color-default-bg;
+}
+
+.main-nav--closed .main-nav__toggle::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 18px;
+  border-top: 2px solid $color-default-bg;
+  border-bottom: 2px solid $color-default-bg;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
     position: absolute;
-    top: 7px;
-    right: 0px;
-    display: block;
+    top: 8px;
+    left: 0;
     width: 24px;
     height: 2px;
-    padding: 0;
-    background-color: $color-alice-blue;
-    border: none;
-    outline: none;
-    cursor: pointer;
-
-    &::before,
-    &::after {
-      content: "";
-      display: block;
-      position: relative;
-      width: 24px;
-      height: 2px;
-      right: 0;
-      background-color: $color-alice-blue;
-    }
-
-    &::before {
-      top: -6px;
-    }
-
-    &::after {
-      top: 4px;
-    }
+    background-color: $color-default-text;
   }
 
-  .main-nav--opened .main-nav__toggle {
-    @include vp-320 {
-      right: 0px;
-      z-index: 10;
-      width: 19px;
-      background-color: $color-default-text;
-      transform: rotate(45deg);
-
-      &::before {
-        top: 0;
-        width: 19px;
-        background-color: $color-default-text;
-        transform: rotate(90deg);
-      }
-
-      &::after {
-        display: none;
-      }
-    }
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
   }
 
-  .main-nav--nojs .main-nav__toggle {
-    @include vp-320 {
-      display: none;
-    }
+  &::after {
+    transform: rotate(-45deg);
   }
+}
 
-  .main-nav--nojs .main-nav__list {
-    @include vp-320 {
-      position: relative;
-      display: flex;
-    }
-  }
-
-  .main-nav--nojs .page-header__logo {
-    @include vp-320 {
-      fill: black;
-    }
+@include vp-320 {
+  .main-nav--opened img {
+    display: none;
   }
 
   .main-nav--opened .main-nav__list {
-    @include vp-320 {
-      position: absolute;
-      display: flex;
-      top: 0;
-    }
+    position: absolute;
+    top: -20px;
+    right: -15px;
+    list-style: none;
+    z-index: 2;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: $color-default-text;
+    background-color: $color-default-bg;
+    width: 285px;
+    height: 500px;
+    padding-top: 75px;
+    background-image: url("../img/svg/logo_menu.svg");
+    background-repeat: no-repeat;
+    background-position: right 228px top 20px;
+
   }
 
-  .main-nav--opened .page-header__logo {
-    @include vp-320 {
-      fill: black;
-    }
+  .main-nav--closed .main-nav__item {
+    display: none;
   }
 
-  .main-nav--closed .main-nav__list {
-    @include vp-320 {
-      display: none;
-    }
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    position: static;
   }
 }

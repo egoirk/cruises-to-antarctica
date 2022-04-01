@@ -29,12 +29,38 @@
   margin: 10px;
 }
 
+.card__img {
+  height: 386px;
+}
+
+.card__img picture {
+  height: 386px;
+}
+
+.card__img img {
+  min-width: 260px;
+  min-height: 386px;
+  line-height: 0;
+
+  @include vp-768 {
+    min-width: 309px;
+  }
+
+  @include vp-320 {
+    min-width: 270px;
+  }
+}
+
 .card {
   width: 260px;
   height: 386px;
 
   @include vp-768 {
     width: 309px;
+  }
+
+  @include vp-320 {
+    width: 270px;
   }
 }
 
@@ -53,7 +79,7 @@
   justify-content: center;
   position: relative;
   z-index: 10;
-  margin-top: -368px;
+  margin-top: -365px;
   padding: 35px 25px 30px;
   color: $color-alice-blue;
   background-color: #011c40;

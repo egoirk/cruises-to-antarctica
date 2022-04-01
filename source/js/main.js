@@ -1,3 +1,4 @@
+const navLogo = document.querySelector('.page-header__logo');
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
 
@@ -7,9 +8,13 @@ navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
+    navLogo.classList.remove('main-nav--closed');
+    navLogo.classList.add('main-nav--opened');
   } else {
     navMain.classList.add('main-nav--closed');
     navMain.classList.remove('main-nav--opened');
+    navLogo.classList.add('main-nav--closed');
+    navLogo.classList.remove('main-nav--opened');
   }
 });
 
