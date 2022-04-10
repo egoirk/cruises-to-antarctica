@@ -8,6 +8,10 @@
     <link rel="preload" href="fonts/montserrat-500.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-600.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>Круизы в Антарктику</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -15,7 +19,7 @@
   <body class="page-body">
     <div class="wrapper">
       <header class="page-header container">
-        <a class="page-header__logo main-nav--closed" href="#"><img src="../img/svg/logo.svg" width="70" height="38"
+        <a class="page-header__logo page-header__logo--closed" href="#"><img src="img/svg/logo.svg" width="70" height="38"
           alt="логотип компании"></a>
 
         <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
@@ -37,11 +41,9 @@
 
       <main>
         <section class="banner">
-          <div class="banner__wrapper">
-            <div class="banner__content">
-              <h1>Круизы в Антарктику</h1>
-              <p>Волшебный мир айсбергов и пингвинов</p>
-            </div>
+          <div class="banner__content">
+            <h1>Круизы в Антарктику</h1>
+            <p>Волшебный мир айсбергов и пингвинов</p>
           </div>
         </section>
 
@@ -53,12 +55,19 @@
           </div>
           <div class="about__img">
             <picture>
+              <!-- 1х: 560px; 2x: 1120px -->
               <source type="image/webp" media="(min-width: 1336px)" srcset="img/content/about.webp 1x, img/content/about@2x.webp 2x">
+              <!-- 1х: 324px; 2x: 648px -->
               <source type="image/webp" media="(min-width: 768px)" srcset="img/content/about-tablet.webp 1x, img/content/about-tablet@2x.webp 2x">
+              <!-- 1х: 290px; 2x: 580px -->
               <source type="image/webp" srcset="img/content/about-mobile.webp 1x, img/content/about-mobile@2x.webp 2x">
+              <!-- 1х: 560px; 2x: 1120px -->
               <source media="(min-width: 1336px)" srcset="img/content/about.png 1x, img/content/about@2x.png 2x">
+              <!-- 1х: 324px; 2x: 648px -->
               <source media="(min-width: 768px)" srcset="img/content/about-tablet.png 1x, img/content/about-tablet@2x.png 2x">
-              <source srcset="img/content/about-mobile.png 1x, img/content/about-mobile@2x.png 2x">
+              <!-- 1х: 290px; 2x: 580px -->
+              <source media="(min-width: 320px)" srcset="img/content/about-mobile.png 1x, img/content/about-mobile@2x.png 2x">
+              <!-- 1х: 560px; 2x: 1120px -->
               <img src="img/content/about.png" width="560" height="301" srcset="img/content/about@2x.png 2x"
                 alt="Фотография пингвинов Антарктики">
             </picture>
@@ -67,7 +76,7 @@
 
         <section class="advantage">
           <div class="advantage__wrapper container">
-            <a name="advantage"><h2>Преимущества</h2></a>
+            <a id="advantage"><h2>Преимущества</h2></a>
 
             <ul class="advantage__list">
               <li class="advantage__item">
@@ -102,7 +111,7 @@
         </section>
 
         <section class="catalog container">
-          <a name="catalog" class="visually-hidden"><h1>Каталог круизов</h1></a>
+          <a id="catalog" class="visually-hidden"><h1>Каталог круизов</h1></a>
           <div class="catalog__wrapper">
             <h2>Ближайшие круизы</h2>
 
@@ -112,12 +121,19 @@
                 <div class="card__side card__side--title">
                   <div class="card__img">
                     <picture>
+                      <!-- 1х: 260px; 2x: 520px -->
                       <source type="image/webp" media="(min-width: 1336px)" srcset="img/catalog/astoria.webp 1x, img/catalog/astoria@2x.webp 2x">
+                      <!-- 1х: 309px; 2x: 618px -->
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/astoria-tablet.webp 1x, img/catalog/astoria-tablet@2x.webp 2x">
+                      <!-- 1х: 270px; 2x: 540px -->
                       <source type="image/webp" srcset="img/catalog/astoria-mobile.webp 1x, img/catalog/astoria-mobile@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
                       <source media="(min-width: 1336px)" srcset="img/catalog/astoria.png 1x, img/catalog/astoria@2x.png 2x">
+                      <!-- 1х: 309px; 2x: 618px -->
                       <source media="(min-width: 768px)" srcset="img/catalog/astoria-tablet.png 1x, img/catalog/astoria-tablet@2x.png 2x">
-                      <source srcset="img/catalog/astoria-mobile.png 1x, img/catalog/astoria-mobile@2x.png 2x">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <source media="(min-width: 320px)" srcset="img/catalog/astoria-mobile.png 1x, img/catalog/astoria-mobile@2x.png 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
                       <img src="img/catalog/astoria.png" width="260" height="386" srcset="img/catalog/astoria@2x.png 2x"
                         alt="Астория">
                     </picture>
@@ -154,10 +170,8 @@
                       <p>от 11500 $</p>
                     </div>
                   </div>
-                  <div class="card__wrapper-button">
-                    <div class="card__link button">
-                      <a class="button__link" href="#">Забронировать</a>
-                    </div>
+                  <div class="card__link button">
+                    <a class="button__link" href="#">Забронировать</a>
                   </div>
                 </div>
               </li>
@@ -166,12 +180,19 @@
                 <div class="card__side card__side--title">
                   <div class="card__img">
                     <picture>
+                      <!-- 1х: 260px; 2x: 520px -->
                       <source type="image/webp" media="(min-width: 1336px)" srcset="img/catalog/astoria.webp 1x, img/catalog/astoria@2x.webp 2x">
+                      <!-- 1х: 309px; 2x: 618px -->
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/astoria-tablet.webp 1x, img/catalog/astoria-tablet@2x.webp 2x">
+                      <!-- 1х: 270px; 2x: 540px -->
                       <source type="image/webp" srcset="img/catalog/astoria-mobile.webp 1x, img/catalog/astoria-mobile@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
                       <source media="(min-width: 1336px)" srcset="img/catalog/astoria.png 1x, img/catalog/astoria@2x.png 2x">
+                      <!-- 1х: 309px; 2x: 618px -->
                       <source media="(min-width: 768px)" srcset="img/catalog/astoria-tablet.png 1x, img/catalog/astoria-tablet@2x.png 2x">
-                      <source srcset="img/catalog/astoria-mobile.png 1x, img/catalog/astoria-mobile@2x.png 2x">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <source media="(min-width: 320px)" srcset="img/catalog/astoria-mobile.png 1x, img/catalog/astoria-mobile@2x.png 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
                       <img src="img/catalog/astoria.png" width="260" height="386" srcset="img/catalog/astoria@2x.png 2x"
                         alt="Астория">
                     </picture>
@@ -220,12 +241,19 @@
                 <div class="card__side card__side--title">
                   <div class="card__img">
                     <picture>
+                      <!-- 1х: 260px; 2x: 520px -->
                       <source type="image/webp" media="(min-width: 1336px)" srcset="img/catalog/atlantis.webp 1x, img/catalog/atlantis@2x.webp 2x">
+                      <!-- 1х: 309px; 2x: 618px -->
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/atlantis-tablet.webp 1x, img/catalog/atlantis-tablet@2x.webp 2x">
+                      <!-- 1х: 270px; 2x: 540px -->
                       <source type="image/webp" srcset="img/catalog/atlantis-mobile.webp 1x, img/catalog/atlantis-mobile@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
                       <source media="(min-width: 1336px)" srcset="img/catalog/atlantis.png 1x, img/catalog/atlantis@2x.png 2x">
+                      <!-- 1х: 309px; 2x: 618px -->
                       <source media="(min-width: 768px)" srcset="img/catalog/atlantis-tablet.png 1x, img/catalog/atlantis-tablet@2x.png 2x">
-                      <source srcset="img/catalog/atlantis-mobile.png 1x, img/catalog/atlantis-mobile@2x.png 2x">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <source media="(min-width: 320px)" srcset="img/catalog/atlantis-mobile.png 1x, img/catalog/atlantis-mobile@2x.png 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
                       <img src="img/catalog/atlantis.png" width="260" height="386" srcset="img/catalog/atlantis@2x.png 2x"
                         alt="Атлантис">
                     </picture>
@@ -274,12 +302,19 @@
                 <div class="card__side card__side--title">
                   <div class="card__img">
                     <picture>
+                      <!-- 1х: 260px; 2x: 520px -->
                       <source type="image/webp" media="(min-width: 1336px)" srcset="img/catalog/odysseus.webp 1x, img/catalog/odysseus@2x.webp 2x">
+                      <!-- 1х: 309px; 2x: 618px -->
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/odysseus-tablet.webp 1x, img/catalog/odysseus-tablet@2x.webp 2x">
+                      <!-- 1х: 270px; 2x: 540px -->
                       <source type="image/webp" srcset="img/catalog/odysseus-mobile.webp 1x, img/catalog/odysseus-mobile@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
                       <source media="(min-width: 1336px)" srcset="img/catalog/odysseus.png 1x, img/catalog/odysseus@2x.png 2x">
+                      <!-- 1х: 309px; 2x: 618px -->
                       <source media="(min-width: 768px)" srcset="img/catalog/odysseus-tablet.png 1x, img/catalog/odysseus-tablet@2x.png 2x">
-                      <source srcset="img/catalog/odysseus-mobile.png 1x, img/catalog/odysseus-mobile@2x.png 2x">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <source media="(min-width: 320px)" srcset="img/catalog/odysseus-mobile.png 1x, img/catalog/odysseus-mobile@2x.png 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
                       <img src="img/catalog/odysseus.png" width="260" height="386" srcset="img/catalog/odysseus@2x.png 2x"
                         alt="Одиссей">
                     </picture>
@@ -328,12 +363,19 @@
                 <div class="card__side card__side--title">
                   <div class="card__img">
                     <picture>
+                      <!-- 1х: 260px; 2x: 520px -->
                       <source type="image/webp" media="(min-width: 1336px)" srcset="img/catalog/olympia.webp 1x, img/catalog/olympia@2x.webp 2x">
+                      <!-- 1х: 309px; 2x: 618px -->
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/olympia-tablet.webp 1x, img/catalog/olympia-tablet@2x.webp 2x">
+                      <!-- 1х: 270px; 2x: 540px -->
                       <source type="image/webp" srcset="img/catalog/olympia-mobile.webp 1x, img/catalog/olympia-mobile@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
                       <source media="(min-width: 1336px)" srcset="img/catalog/olympia.png 1x, img/catalog/olympia@2x.png 2x">
+                      <!-- 1х: 309px; 2x: 618px -->
                       <source media="(min-width: 768px)" srcset="img/catalog/olympia-tablet.png 1x, img/catalog/olympia-tablet@2x.png 2x">
-                      <source srcset="img/catalog/olympia-mobile.png 1x, img/catalog/olympia-mobile@2x.png 2x">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <source media="(min-width: 320px)" srcset="img/catalog/olympia-mobile.png 1x, img/catalog/olympia-mobile@2x.png 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
                       <img src="img/catalog/olympia.png" width="260" height="386" srcset="img/catalog/olympia@2x.png 2x"
                         alt="Олимпия">
                     </picture>
@@ -382,12 +424,19 @@
                 <div class="card__side card__side--title">
                   <div class="card__img">
                     <picture>
+                      <!-- 1х: 260px; 2x: 520px -->
                       <source type="image/webp" media="(min-width: 1336px)" srcset="img/catalog/aurora.webp 1x, img/catalog/aurora@2x.webp 2x">
+                      <!-- 1х: 309px; 2x: 618px -->
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/aurora-tablet.webp 1x, img/catalog/aurora-tablet@2x.webp 2x">
+                      <!-- 1х: 270px; 2x: 540px -->
                       <source type="image/webp" srcset="img/catalog/aurora-mobile.webp 1x, img/catalog/aurora-mobile@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
                       <source media="(min-width: 1336px)" srcset="img/catalog/aurora.png 1x, img/catalog/aurora@2x.png 2x">
+                      <!-- 1х: 309px; 2x: 618px -->
                       <source media="(min-width: 768px)" srcset="img/catalog/aurora-tablet.png 1x, img/catalog/aurora-tablet@2x.png 2x">
-                      <source srcset="img/catalog/aurora-mobile.png 1x, img/catalog/aurora-mobile@2x.png 2x">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <source media="(min-width: 320px)" srcset="img/catalog/aurora-mobile.png 1x, img/catalog/aurora-mobile@2x.png 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
                       <img src="img/catalog/aurora.png" width="260" height="386" srcset="img/catalog/aurora@2x.png 2x"
                         alt="Аврора">
                     </picture>
@@ -436,12 +485,19 @@
                 <div class="card__side card__side--title">
                   <div class="card__img">
                     <picture>
+                      <!-- 1х: 260px; 2x: 520px -->
                       <source type="image/webp" media="(min-width: 1336px)" srcset="img/catalog/leonor.webp 1x, img/catalog/leonors@2x.webp 2x">
+                      <!-- 1х: 309px; 2x: 618px -->
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/leonor-tablet.webp 1x, img/catalog/leonor-tablet@2x.webp 2x">
+                      <!-- 1х: 270px; 2x: 540px -->
                       <source type="image/webp" srcset="img/catalog/leonor-mobile.webp 1x, img/catalog/leonor-mobile@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
                       <source media="(min-width: 1336px)" srcset="img/catalog/leonor.png 1x, img/catalog/leonor@2x.png 2x">
+                      <!-- 1х: 309px; 2x: 618px -->
                       <source media="(min-width: 768px)" srcset="img/catalog/leonor-tablet.png 1x, img/catalog/leonor-tablet@2x.png 2x">
-                      <source srcset="img/catalog/leonor-mobile.png 1x, img/catalog/leonor-mobile@2x.png 2x">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <source media="(min-width: 320px)" srcset="img/catalog/leonor-mobile.png 1x, img/catalog/leonor-mobile@2x.png 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
                       <img src="img/catalog/leonor.png" width="260" height="386" srcset="img/catalog/leonor@2x.png 2x"
                         alt="Леонор">
                     </picture>
@@ -490,12 +546,19 @@
                 <div class="card__side card__side--title">
                   <div class="card__img">
                     <picture>
+                      <!-- 1х: 260px; 2x: 520px -->
                       <source type="image/webp" media="(min-width: 1336px)" srcset="img/catalog/minion.webp 1x, img/catalog/minion@2x.webp 2x">
+                      <!-- 1х: 309px; 2x: 618px -->
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/minion-tablet.webp 1x, img/catalog/minion-tablet@2x.webp 2x">
+                      <!-- 1х: 270px; 2x: 540px -->
                       <source type="image/webp" srcset="img/catalog/minion-mobile.webp 1x, img/catalog/minion-mobile@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
                       <source media="(min-width: 1336px)" srcset="img/catalog/minion.png 1x, img/catalog/minion@2x.png 2x">
+                      <!-- 1х: 309px; 2x: 618px -->
                       <source media="(min-width: 768px)" srcset="img/catalog/minion-tablet.png 1x, img/catalog/minion-tablet@2x.png 2x">
-                      <source srcset="img/catalog/minion-mobile.png 1x, img/catalog/minion-mobile@2x.png 2x">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <source media="(min-width: 320px)" srcset="img/catalog/minion-mobile.png 1x, img/catalog/minion-mobile@2x.png 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
                       <img src="img/catalog/minion.png" width="260" height="386" srcset="img/catalog/minion@2x.png 2x"
                         alt="Минион - 1">
                     </picture>
@@ -576,13 +639,17 @@
         </section>
 
         <section class="contact container">
-          <a name="contact"><h1 class="visually-hidden">Наши контакты</h1></a>
+          <a id="contact"><h1 class="visually-hidden">Наши контакты</h1></a>
           <div class="contact__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002935!2d30.320858715898954!3d59.93871916905446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1648658235459!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <picture>
+              <!-- 1х: 560px; 2x: 1120px -->
               <source media="(min-width: 1336px)" srcset="img/map.jpg 1x, img/map@2x.jpg 2x">
+              <!-- 1х: 324px; 2x: 648px -->
               <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-              <source srcset="img/map-mobile.jpg 1x, img/map-mobile@2x.jpg 2x">
+              <!-- 1х: 290px; 2x: 580px -->
+              <source media="(min-width: 320px)" srcset="img/map-mobile.jpg 1x, img/map-mobile@2x.jpg 2x">
+              <!-- 1х: 560px; 2x: 1120px -->
               <img src="img/map.jpg" width="560" height="306" srcset="img/map@2x.jpg 2x"
                 alt="Карта с нашим расположением">
             </picture>
@@ -606,7 +673,6 @@
         <div class="page-footer__wrapper container">
           <a class="page-footer__logo" href="#"><img src="../img/svg/logo.svg" width="70" height="38"
             alt="логотип компании"></a>
-          </a>
 
           <nav class="page-footer__nav">
             <ul class="page-footer__nav-list">

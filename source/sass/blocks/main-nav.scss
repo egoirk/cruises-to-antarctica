@@ -1,7 +1,7 @@
 .main-nav {
   color: $color-default-white;
 
-  @include vp-320 {
+  @include vp-425 {
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -44,7 +44,7 @@
     padding-left: 23px;
   }
 
-  @include vp-320 {
+  @include vp-425 {
     font-size: 18px;
     line-height: 22px;
     color: $color-default-text;
@@ -52,14 +52,14 @@
 }
 
 .main-nav__item {
-  @include vp-320 {
+  @include vp-425 {
     padding-bottom: 20px;
   }
 }
 
 .main-nav__toggle {
   display: none;
-  @include vp-320 {
+  @include vp-425 {
   position: absolute;
   top: 0px;
   right: 0;
@@ -122,11 +122,7 @@
   }
 }
 
-@include vp-320 {
-  .main-nav--opened img {
-    display: none;
-  }
-
+@include vp-425 {
   .main-nav--opened .main-nav__list {
     position: absolute;
     top: -20px;

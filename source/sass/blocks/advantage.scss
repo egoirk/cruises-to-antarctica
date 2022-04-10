@@ -31,6 +31,18 @@
 
 .advantage__wrapper {
   padding-top: 120px;
+
+  @include vp-768 {
+    padding-top: 100px;
+  }
+
+  @include vp-425 {
+    padding-top: 65px;
+  }
+
+  @include vp-320 {
+    padding-top: 65px;
+  }
 }
 
 .advantage__wrapper h2 {
@@ -45,16 +57,24 @@
 
 .advantage__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 40px;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @include vp-768 {
+    gap: 30px;
+  }
+
+  @include vp-425 {
+    padding-bottom: 65px;
+  }
 }
 
 .advantage__item {
   max-width: 360px;
-  margin-bottom: 50px;
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 30px;
