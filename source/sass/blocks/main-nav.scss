@@ -15,8 +15,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-
-
 }
 
 .main-nav__link {
@@ -59,21 +57,22 @@
 
 .main-nav__toggle {
   display: none;
-  @include vp-425 {
-  position: absolute;
-  top: 0px;
-  right: 0;
-  display: block;
-  width: 24px;
-  height: 2px;
-  cursor: pointer;
-  border: none;
-  background-color: $color-default-bg;
-  z-index: 3;
 
-  &:focus-visible {
-    outline: 2px solid $color-default-bg;
-  }
+  @include vp-425 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 24px;
+    height: 2px;
+    cursor: pointer;
+    border: none;
+    background-color: $color-default-bg;
+    z-index: 3;
+
+    &:focus-visible {
+      outline: 2px solid $color-default-bg;
+    }
   }
 }
 
@@ -140,7 +139,6 @@
     background-image: url("../img/svg/logo_menu.svg");
     background-repeat: no-repeat;
     background-position: right 228px top 20px;
-
   }
 
   .main-nav--closed .main-nav__item {

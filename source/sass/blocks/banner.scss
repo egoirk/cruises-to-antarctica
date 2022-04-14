@@ -6,28 +6,28 @@
   top: -108px;
   margin: 0 auto;
   background-color: #00437c;
-  background-image: url(../img/header-bg.png);
+  background-image: url("../img/header-bg.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
 
   @include retina {
-    background-image: url(../img/header-bg@2x.png);
+    background-image: url("../img/header-bg@2x.png");
   }
 
   @include vp-768 {
-    background-image: url(../img/header-bg-tablet.png);
+    background-image: url("../img/header-bg-tablet.png");
 
     @include retina {
-      background-image: url(../img/header-bg-tablet@2x.png);
+      background-image: url("../img/header-bg-tablet@2x.png");
     }
   }
 
   @include vp-320 {
-    background-image: url(../img/header-bg-mobile.png);
+    background-image: url("../img/header-bg-mobile.png");
 
     @include retina {
-      background-image: url(../img/header-bg-mobile@2x.png);
+      background-image: url("../img/header-bg-mobile@2x.png");
     }
   }
 }

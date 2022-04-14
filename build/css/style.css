@@ -637,7 +637,7 @@ button,
   top: -108px;
   margin: 0 auto;
   background-color: #00437c;
-  background-image: url(../img/header-bg.png);
+  background-image: url("../img/header-bg.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -800,7 +800,7 @@ button,
 .advantage {
   min-height: 562px;
   background-color: #dce8f6;
-  background-image: url(../img/bg-advantage.png);
+  background-image: url("../img/bg-advantage.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -877,7 +877,6 @@ button,
 
 .catalog {
   padding: 120px 118px;
-  font-family: Montserrat;
 }
 
 .catalog h2 {
@@ -1464,7 +1463,7 @@ button,
   }
 
   .banner {
-    background-image: url(../img/header-bg-tablet.png);
+    background-image: url("../img/header-bg-tablet.png");
   }
 
   .banner__content {
@@ -1532,7 +1531,7 @@ button,
 
   .advantage {
     min-height: 588px;
-    background-image: url(../img/bg-advantage-tablet.png);
+    background-image: url("../img/bg-advantage-tablet.png");
   }
 
   .advantage__wrapper {
@@ -1687,7 +1686,7 @@ button,
 
 @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 768px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 768px) and (min-resolution: 144dpi), (max-width: 768px) and (min-resolution: 1.5dppx) {
   .banner {
-    background-image: url(../img/header-bg-tablet@2x.png);
+    background-image: url("../img/header-bg-tablet@2x.png");
   }
 
   .advantage {
@@ -1751,7 +1750,7 @@ button,
 
   .main-nav__toggle {
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 0;
     display: block;
     width: 24px;
@@ -1847,7 +1846,7 @@ button,
   }
 
   .banner {
-    background-image: url(../img/header-bg-mobile.png);
+    background-image: url("../img/header-bg-mobile.png");
   }
 
   .banner__content {
@@ -1872,15 +1871,14 @@ button,
   }
 
   .about__description h2 {
-    padding-right: 30px;
+    padding: 0;
     font-size: 24px;
     line-height: 33px;
-    padding: 0;
   }
 
   .advantage {
     min-height: 997px;
-    background-image: url(../img/bg-advantage-mobile.png);
+    background-image: url("../img/bg-advantage-mobile.png");
   }
 
   .advantage__wrapper {
@@ -2052,7 +2050,7 @@ button,
 
 @media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 320px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 320px) and (min-resolution: 144dpi), (max-width: 320px) and (min-resolution: 1.5dppx) {
   .banner {
-    background-image: url(../img/header-bg-mobile@2x.png);
+    background-image: url("../img/header-bg-mobile@2x.png");
   }
 
   .advantage {
@@ -2066,7 +2064,7 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .banner {
-    background-image: url(../img/header-bg@2x.png);
+    background-image: url("../img/header-bg@2x.png");
   }
 
   .advantage {

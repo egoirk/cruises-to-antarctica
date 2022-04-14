@@ -1,7 +1,7 @@
 .advantage {
   min-height: 562px;
   background-color: $color-solitude;
-  background-image: url(../img/bg-advantage.png);
+  background-image: url("../img/bg-advantage.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -12,7 +12,7 @@
 
   @include vp-768 {
     min-height: 588px;
-    background-image: url(../img/bg-advantage-tablet.png);
+    background-image: url("../img/bg-advantage-tablet.png");
 
     @include retina {
       background-image: url("../img/bg-advantage-tablet@2x.png");
@@ -21,7 +21,7 @@
 
   @include vp-320 {
     min-height: 997px;
-    background-image: url(../img/bg-advantage-mobile.png);
+    background-image: url("../img/bg-advantage-mobile.png");
 
     @include retina {
       background-image: url("../img/bg-advantage-mobile@2x.png");
