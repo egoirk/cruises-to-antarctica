@@ -24,7 +24,7 @@
 }
 
 .about__description {
-  width: 50%;
+  max-width: 512px;
 
   @include vp-425 {
     width: 100%;
@@ -50,7 +50,7 @@
 }
 
 .about__description h2 {
-  margin-top: 10px;
+  margin-top: 56px;
   margin-bottom: 24px;
   font-size: 28px;
   line-height: 42px;

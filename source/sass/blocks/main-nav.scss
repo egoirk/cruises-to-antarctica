@@ -104,9 +104,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 8px;
-    left: 0;
-    width: 24px;
+    top: 11px;
+    left: 9px;
+    width: 17px;
     height: 2px;
     background-color: $color-default-text;
   }
@@ -134,7 +134,7 @@
     color: $color-default-text;
     background-color: $color-default-bg;
     width: 285px;
-    height: 500px;
+    height: 100vh;
     padding-top: 75px;
     background-image: url("../img/svg/logo_menu.svg");
     background-repeat: no-repeat;

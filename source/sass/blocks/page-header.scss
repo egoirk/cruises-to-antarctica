@@ -3,10 +3,12 @@
   position: relative;
   z-index: 10;
   display: grid;
+  align-items: center;
   grid-template-columns: 100px 1fr;
 
   @include vp-768 {
-    padding-top: 30px;
+    padding-top: 28px;
+    padding-left: 49px;
   }
 
   @include vp-425 {

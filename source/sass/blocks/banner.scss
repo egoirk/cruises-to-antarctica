@@ -33,12 +33,12 @@
 }
 
 .banner__content {
-  padding-top: 283px;
+  padding-top: 271px;
   padding-left: 198px;
 
   @include vp-768 {
-    padding-top: 280px;
-    padding-left: 45px;
+    padding-top: 324px;
+    padding-left: 49px;
   }
 
   @include vp-320 {
@@ -67,7 +67,7 @@
 
 .banner__content p {
   color: $color-default-white-text;
-  padding-top: 30px;
+  padding-top: 11px;
   margin: 0;
   max-width: 600px;
   font-size: 20px;
@@ -75,7 +75,7 @@
   font-weight: 400;
 
   @include vp-768 {
-    padding-top: 29px;
+    padding-top: 12px;
     font-size: 18px;
     line-height: 22px;
   }
