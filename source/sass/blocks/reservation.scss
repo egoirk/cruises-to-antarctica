@@ -22,7 +22,9 @@
     }
   }
 
-  @include vp-320 {
+  @include vp-425 {
+    position: relative;
+    top: -100px;
     padding-top: 0;
     min-height: 760px;
     background-image: url("../img/bg-form-mobile.png");
@@ -71,7 +73,7 @@
 
   @include vp-768 {
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 39px;
     font-size: 34px;
     line-height: 51px;
     text-align: center;
@@ -80,7 +82,7 @@
   @include vp-320 {
     max-width: 194px;
     margin: 0 auto;
-    padding-top: 65px;
+    padding-top: 58px;
     font-size: 24px;
     line-height: 31px;
   }
@@ -97,12 +99,13 @@
   @include vp-768 {
     margin: 0 auto;
     text-align: center;
+    padding-top: 4px;
   }
 
   @include vp-320 {
     margin: 0 auto;
-    padding-top: 25px;
-    max-width: 257px;
+    padding-top: 15px;
+    max-width: 265px;
     font-size: 16px;
     line-height: 22px;
   }

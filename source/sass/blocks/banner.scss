@@ -16,6 +16,8 @@
   }
 
   @include vp-768 {
+    min-height: 638px;
+    top: -52px;
     background-image: url("../img/header-bg-tablet.png");
 
     @include retina {
@@ -24,6 +26,7 @@
   }
 
   @include vp-320 {
+    top: -158px;
     background-image: url("../img/header-bg-mobile.png");
 
     @include retina {
@@ -37,11 +40,12 @@
   padding-left: 198px;
 
   @include vp-768 {
-    padding-top: 324px;
-    padding-left: 49px;
+    padding-top: 268px;
+    padding-left: 46px;
   }
 
   @include vp-320 {
+    padding-top: 315px;
     padding-left: 15px;
   }
 }
@@ -82,5 +86,6 @@
 
   @include vp-320 {
     font-size: 16px;
+    padding-top: 10px;
   }
 }

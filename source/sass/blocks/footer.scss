@@ -11,7 +11,7 @@
   padding-bottom: 49px;
 
   @include vp-768 {
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 50px;
   }
 
@@ -67,6 +67,7 @@
     margin-left: 25px;
     font-size: 12px;
     line-height: 15px;
+    justify-content: flex-start;
   }
 
   @include vp-320 {

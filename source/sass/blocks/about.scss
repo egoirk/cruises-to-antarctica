@@ -8,11 +8,13 @@
   @include vp-768 {
     align-items: flex-start;
     gap: 30px;
-    padding-top: 0;
-    padding-bottom: 100px;
+    padding-top: 39px;
+    padding-bottom: 93px;
   }
 
   @include vp-425 {
+    position: relative;
+    top: -100px;
     flex-direction: column;
     padding-bottom: 65px;
     gap: 40px;
@@ -26,6 +28,14 @@
 .about__description {
   max-width: 512px;
 
+  @include vp-768 {
+    width: 50%;
+    min-width: 205px;
+    height: auto;
+    box-sizing: border-box;
+    float: left;
+  }
+
   @include vp-425 {
     width: 100%;
   }
@@ -36,16 +46,17 @@
 
   @include vp-768 {
     position: relative;
-    width: 324px;
+    width: 50%;
+    max-width: 324px;
     height: 264px;
-    margin-top: 18px;
+    margin-top: 9px;
     overflow: hidden;
   }
 
   @include vp-425 {
     width: 290px;
     height: 186px;
-    margin: 0 auto;
+    margin: -7px auto;
   }
 }
 
@@ -59,7 +70,7 @@
   @include vp-768 {
     margin: 0;
     min-width: 205px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     font-size: 26px;
     line-height: 36px;
   }

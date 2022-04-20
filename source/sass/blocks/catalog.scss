@@ -3,11 +3,13 @@
   padding-bottom: 120px;
 
   @include vp-768 {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 100px;
   }
 
   @include vp-425 {
+    position: relative;
+    top: -100px;
     padding-top: 65px;
     padding-bottom: 100px;
   }
@@ -32,10 +34,10 @@
     line-height: 39px;
   }
 
-  @include vp-320 {
+  @include vp-425 {
     font-size: 24px;
     line-height: 36px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 }
 
@@ -97,6 +99,16 @@
   color: $color-alice-blue;
   margin: -48px 0 0;
   padding-left: 30px;
+
+  @include vp-768 {
+    margin: -54px 0 0;
+    padding-left: 35px;
+  }
+
+  @include vp-425 {
+    margin: -45px 0 0;
+    padding-left: 25px;
+  }
 }
 
 .card__side--description {
@@ -111,6 +123,16 @@
   background-color: #011c40;
   min-height: 386px;
   visibility: hidden;
+
+  @include vp-768 {
+    padding: 30px 35px 35px;
+    margin-top: -360px;
+  }
+
+  @include vp-425 {
+    padding: 30px 25px 35px;
+    margin-top: -369px;
+  }
 }
 
 .card:hover .card__side--description {
