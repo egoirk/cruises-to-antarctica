@@ -5,30 +5,26 @@
   padding-top: 12px;
   padding-bottom: 120px;
 
-  @include vp-768 {
+  @include vp-1023 {
     align-items: flex-start;
     gap: 30px;
     padding-top: 39px;
     padding-bottom: 93px;
   }
 
-  @include vp-425 {
+  @include vp-767 {
     position: relative;
     top: -100px;
     flex-direction: column;
     padding-bottom: 65px;
     gap: 40px;
   }
-
-  @include vp-320 {
-    padding-bottom: 65px;
-  }
 }
 
 .about__description {
   max-width: 512px;
 
-  @include vp-768 {
+  @include vp-1023 {
     width: 50%;
     min-width: 205px;
     height: auto;
@@ -36,7 +32,7 @@
     float: left;
   }
 
-  @include vp-425 {
+  @include vp-767 {
     width: 100%;
   }
 }
@@ -44,7 +40,7 @@
 .about__img {
   width: 560px;
 
-  @include vp-768 {
+  @include vp-1023 {
     position: relative;
     width: 50%;
     max-width: 324px;
@@ -53,7 +49,7 @@
     overflow: hidden;
   }
 
-  @include vp-425 {
+  @include vp-767 {
     width: 290px;
     height: 186px;
     margin: -7px auto;
@@ -67,7 +63,7 @@
   line-height: 42px;
   font-weight: 600;
 
-  @include vp-768 {
+  @include vp-1023 {
     margin: 0;
     min-width: 205px;
     margin-bottom: 16px;
@@ -75,7 +71,7 @@
     line-height: 36px;
   }
 
-  @include vp-320 {
+  @include vp-767 {
     padding: 0;
     font-size: 24px;
     line-height: 33px;
@@ -86,7 +82,7 @@
   font-size: 16px;
   line-height: 24px;
 
-  @include vp-768 {
+  @include vp-1023 {
     margin: 0;
 
     font-size: 16px;

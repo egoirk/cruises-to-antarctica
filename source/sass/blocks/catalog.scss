@@ -2,19 +2,14 @@
   padding-top: 109px;
   padding-bottom: 120px;
 
-  @include vp-768 {
+  @include vp-1023 {
     padding-top: 90px;
     padding-bottom: 100px;
   }
 
-  @include vp-425 {
+  @include vp-767 {
     position: relative;
     top: -100px;
-    padding-top: 65px;
-    padding-bottom: 100px;
-  }
-
-  @include vp-320 {
     padding-top: 65px;
     padding-bottom: 65px;
   }
@@ -29,12 +24,12 @@
   margin: 0;
   padding-bottom: 49px;
 
-  @include vp-768 {
+  @include vp-1023 {
     font-size: 26px;
     line-height: 39px;
   }
 
-  @include vp-425 {
+  @include vp-767 {
     font-size: 24px;
     line-height: 36px;
     padding-bottom: 30px;
@@ -70,11 +65,11 @@
   min-height: 386px;
   line-height: 0;
 
-  @include vp-768 {
+  @include vp-1023 {
     min-width: 309px;
   }
 
-  @include vp-320 {
+  @include vp-767 {
     min-width: 270px;
   }
 }
@@ -83,11 +78,11 @@
   width: 260px;
   height: 386px;
 
-  @include vp-768 {
+  @include vp-1023 {
     width: 309px;
   }
 
-  @include vp-320 {
+  @include vp-767 {
     width: 270px;
   }
 }
@@ -100,12 +95,12 @@
   margin: -48px 0 0;
   padding-left: 30px;
 
-  @include vp-768 {
+  @include vp-1023 {
     margin: -54px 0 0;
     padding-left: 35px;
   }
 
-  @include vp-425 {
+  @include vp-767 {
     margin: -45px 0 0;
     padding-left: 25px;
   }
@@ -124,12 +119,12 @@
   min-height: 386px;
   visibility: hidden;
 
-  @include vp-768 {
+  @include vp-1023 {
     padding: 30px 35px 35px;
     margin-top: -360px;
   }
 
-  @include vp-425 {
+  @include vp-767 {
     padding: 30px 25px 35px;
     margin-top: -369px;
   }
@@ -192,11 +187,11 @@
   color: #011c40;
   text-decoration: none;
 
-  @include vp-768 {
+  @include vp-1023 {
     min-width: 239px;
   }
 
-  @include vp-320 {
+  @include vp-767 {
     min-width: 220px;
   }
 }

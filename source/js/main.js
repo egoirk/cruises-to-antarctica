@@ -2,7 +2,7 @@ const bodyOverflow = document.querySelector('.page-body');
 const navLogo = document.querySelector('.page-header__logo');
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
-const clickMenu = document.querySelector('.main-nav__list');
+const menuItems = document.querySelectorAll('.main-nav__list a');
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -32,6 +32,6 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-clickMenu.addEventListener('click', function () {
+menuItems.forEach((item) => item.addEventListener('click', function () {
   closeMenu();
-});
+}));

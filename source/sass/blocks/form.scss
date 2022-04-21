@@ -1,4 +1,4 @@
-@include vp-320 {
+@include vp-767 {
   .form {
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@
   font-weight: 500;
   color: $color-alice-blue;
 
-  @include vp-320 {
+  @include vp-767 {
     font-size: 18px;
     line-height: 25px;
     text-align: center;
@@ -38,7 +38,7 @@
   font-size: 10px;
   line-height: 13px;
 
-  @include vp-320 {
+  @include vp-767 {
     font-size: 10px;
     line-height: 12px;
   }
@@ -114,7 +114,7 @@
     transform: rotate(-45deg);
   }
 
-  @include vp-320 {
+  @include vp-767 {
     padding-top: 0;
   }
 }
@@ -152,7 +152,7 @@
     background-color: $color-alice-blue;
   }
 
-  @include vp-320 {
+  @include vp-767 {
     width: 100%;
   }
 }
