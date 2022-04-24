@@ -134,6 +134,14 @@
   visibility: visible;
 }
 
+.cards__item:focus .card__side--description {
+  visibility: visible;
+}
+
+.card--focused .card__side--description {
+  visibility: visible;
+}
+
 .card__wrapper {
   padding: 0;
   margin: 0;

@@ -2,7 +2,9 @@ const bodyOverflow = document.querySelector('.page-body');
 const navLogo = document.querySelector('.page-header__logo');
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
+const menuList = document.querySelector('.main-nav__list');
 const menuItems = document.querySelectorAll('.main-nav__list a');
+const cardDescription = document.querySelectorAll('.card');
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -35,3 +37,26 @@ navToggle.addEventListener('click', function () {
 menuItems.forEach((item) => item.addEventListener('click', function () {
   closeMenu();
 }));
+
+navMain.addEventListener('click', function (event) {
+  if (navToggle.contains(event.target) || menuList.contains(event.target)) {
+    return;
+  }
+  closeMenu();
+});
+
+// focus card__side--description
+cardDescription.forEach(function (item) {
+  item.addEventListener('focus', function () {
+    closeCards();
+    item.classList.add('card--focused');
+  });
+});
+
+function closeCards() {
+  cardDescription.forEach(function (item) {
+    if (item.classList.contains('card--focused')) {
+      item.classList.remove('card--focused');
+    }
+  });
+}
