@@ -38,10 +38,11 @@
 .banner__content {
   padding-top: 271px;
   padding-left: 198px;
+  padding-bottom: 15px;
 
   @include vp-1023 {
-    padding-top: 268px;
-    padding-left: 46px;
+    padding-top: 270px;
+    padding-left: 45px;
   }
 
   @include vp-767 {

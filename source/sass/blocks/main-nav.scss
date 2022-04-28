@@ -1,5 +1,6 @@
 .main-nav {
   color: $color-default-white;
+  position: relative;
 
   @include vp-767 {
     position: relative;
@@ -16,9 +17,14 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  position: absolute;
+  flex-wrap: wrap;
+  top: -11px;
+  right: 0;
+  left: 100px;
 
   @include vp-1023 {
-    gap: 23px;
+    gap: 24px;
   }
 }
 
